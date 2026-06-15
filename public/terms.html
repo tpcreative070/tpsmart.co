@@ -10,7 +10,12 @@
         tailwind.config = {
             theme: {
                 extend: {
-                    colors: { brand: { teal: '#00796B', tealDark: '#004D40' } }
+                    colors: {
+                        brand: {
+                            teal: '#00796B',
+                            tealDark: '#004D40'
+                        }
+                    }
                 }
             }
         }
@@ -18,79 +23,211 @@
 </head>
 <body class="bg-slate-50 text-slate-800 font-sans antialiased flex flex-col min-h-screen">
 
-    <header class="bg-white shadow-sm sticky top-0 z-50 border-b border-slate-100">
-        <div class="max-w-4xl mx-auto px-6 py-4 flex justify-between items-center">
-            <a href="index.html" class="flex items-center space-x-3 group">
-                <div class="bg-brand-teal text-white p-2.5 rounded-xl shadow-md">
-                    <i class="fas fa-qrcode text-lg"></i>
-                </div>
-                <span class="text-lg font-bold tracking-tight text-slate-900">QR Scanner Free</span>
-            </a>
-            <span class="text-xs text-slate-400 font-mono">Updated: June 2026</span>
-        </div>
-    </header>
+<header class="bg-white shadow-sm sticky top-0 z-50 border-b border-slate-100">
+    <div class="max-w-4xl mx-auto px-6 py-4 flex justify-between items-center">
+        <a href="index.html" class="flex items-center space-x-3 group">
+            <div class="bg-brand-teal text-white p-2.5 rounded-xl shadow-md">
+                <i class="fas fa-qrcode text-lg"></i>
+            </div>
+            <span class="text-lg font-bold tracking-tight text-slate-900">QR Scanner Free</span>
+        </a>
+        <span class="text-xs text-slate-400 font-mono">Effective Date: June 2026</span>
+    </div>
+</header>
 
-    <main class="flex-grow max-w-4xl w-full mx-auto px-6 py-12">
-        <div class="bg-white rounded-3xl p-8 md:p-12 shadow-sm border border-slate-200/60 space-y-10">
-            <div>
-                <h1 class="text-3xl font-extrabold text-slate-900 tracking-tight mb-4">Terms of Service</h1>
-                <p class="text-slate-600 leading-relaxed text-sm">
-                    By downloading or using QR Scanner Free, provided by <strong>TPSmart</strong>, you agree to comply with the terms detailed below. Please read them carefully.
+<main class="flex-grow max-w-4xl w-full mx-auto px-6 py-12">
+    <div class="bg-white rounded-3xl p-8 md:p-12 shadow-sm border border-slate-200/60 space-y-10">
+
+        <div>
+            <h1 class="text-3xl font-extrabold text-slate-900 tracking-tight mb-4">Terms of Service</h1>
+            <p class="text-slate-600 leading-relaxed text-sm">
+                These Terms of Service govern your access to and use of QR Scanner Free,
+                operated by <strong>TPSmart</strong>. By downloading, accessing, or using
+                the application, you agree to be bound by these Terms.
+            </p>
+        </div>
+
+        <hr class="border-slate-100">
+
+        <div class="space-y-8 text-sm text-slate-600 leading-relaxed">
+
+            <section class="space-y-3">
+                <h2 class="text-lg font-bold text-slate-900 flex items-center">
+                    <i class="fas fa-check-circle text-brand-teal mr-3"></i>
+                    Acceptance of Terms
+                </h2>
+                <p>
+                    By using QR Scanner Free, you acknowledge that you have read,
+                    understood, and agreed to these Terms of Service and our Privacy Policy.
+                    If you do not agree with any part of these Terms, you must discontinue use
+                    of the application.
                 </p>
-            </div>
+            </section>
 
-            <hr class="border-slate-100">
+            <section class="space-y-3">
+                <h2 class="text-lg font-bold text-slate-900 flex items-center">
+                    <i class="fas fa-mobile-alt text-brand-teal mr-3"></i>
+                    Application Use
+                </h2>
+                <p>
+                    QR Scanner Free is provided for personal and commercial use for scanning,
+                    generating, managing, and synchronizing QR codes and barcodes.
+                </p>
+                <p>
+                    You agree not to misuse the application, interfere with its operation,
+                    attempt unauthorized access, reverse engineer protected components,
+                    or use the service in violation of applicable laws.
+                </p>
+            </section>
 
-            <div class="space-y-8 text-sm text-slate-600 leading-relaxed">
-                <section class="space-y-2">
-                    <h2 class="text-base font-bold text-slate-900">1. Permitted App Usage</h2>
-                    <p>
-                        We grant you a personal, non-transferable, revocable license to use QR Scanner Free strictly for personal or internal business functions on compatible Android mobile hardware. You may not attempt to extract, copy, or reverse-engineer our application's primary codebase.
-                    </p>
-                </section>
+            <section class="space-y-3">
+                <h2 class="text-lg font-bold text-slate-900 flex items-center">
+                    <i class="fas fa-user text-brand-teal mr-3"></i>
+                    User Accounts
+                </h2>
+                <p>
+                    Certain features may require authentication using Google Sign-In through
+                    Firebase Authentication.
+                </p>
+                <p>
+                    You are responsible for maintaining the security of your Google account
+                    and for activities performed through your authenticated account.
+                </p>
+            </section>
 
-                <section class="space-y-2">
-                    <h2 class="text-base font-bold text-slate-900">2. External Hyperlinks Disclaimer</h2>
-                    <p>
-                        Our application decodes data strings and displays hyperlinks contained within scanned barcodes. 
-                        <strong>TPSmart is not responsible for the contents, safety, or policies of any third-party websites</strong> that you choose to access through our software links. Always exercise caution before accessing unknown destination web addresses.
-                    </p>
-                </section>
+            <section class="space-y-3">
+                <h2 class="text-lg font-bold text-slate-900 flex items-center">
+                    <i class="fas fa-cloud text-brand-teal mr-3"></i>
+                    Cloud Synchronization
+                </h2>
+                <p>
+                    When cloud synchronization is enabled, your supported application data
+                    may be stored in Google Firebase Firestore.
+                </p>
+                <p>
+                    While we take reasonable measures to protect stored data, you acknowledge
+                    that no electronic storage or transmission system can be guaranteed to be
+                    completely secure.
+                </p>
+            </section>
 
-                <section class="space-y-2">
-                    <h2 class="text-base font-bold text-slate-900">3. In-App Purchases &amp; Upgrades</h2>
-                    <p>
-                        Upgrades to our premium ad-free experience or expanded feature packages are handled securely via the standard Google Play Billing systems. All active premium licenses are bound directly to your authenticated Google Play account profile.
-                    </p>
-                </section>
+            <section class="space-y-3">
+                <h2 class="text-lg font-bold text-slate-900 flex items-center">
+                    <i class="fas fa-ad text-brand-teal mr-3"></i>
+                    Advertising
+                </h2>
+                <p>
+                    The application may display advertisements provided by Google AdMob
+                    and mediation partners.
+                </p>
+                <p>
+                    Advertisements are subject to the policies and technologies of the
+                    respective advertising providers.
+                </p>
+            </section>
 
-                <section class="space-y-2">
-                    <h2 class="text-base font-bold text-slate-900">4. Limitation of Liability</h2>
-                    <p>
-                        QR Scanner Free is provided to users "As-Is". <strong>TPSmart</strong> shall not be held liable for any data discrepancies, formatting bugs in CSV logs, network connection configuration failures, or loss of historical scan history records resulting from app updates or hardware issues.
-                    </p>
-                </section>
+            <section class="space-y-3">
+                <h2 class="text-lg font-bold text-slate-900 flex items-center">
+                    <i class="fas fa-copyright text-brand-teal mr-3"></i>
+                    Intellectual Property
+                </h2>
+                <p>
+                    All trademarks, branding, software, content, graphics, logos,
+                    and application components are owned by TPSmart or its licensors.
+                </p>
+                <p>
+                    You may not copy, distribute, modify, sublicense, or create derivative
+                    works without prior written permission.
+                </p>
+            </section>
 
-                <section class="space-y-2">
-                    <h2 class="text-base font-bold text-slate-900">5. Contact Information</h2>
-                    <p>
-                        For any inquiries regarding these terms, please contact us at 
-                        <a href="mailto:ai@tpcreative.co" class="font-mono text-brand-teal bg-teal-50 px-2 py-0.5 rounded text-xs font-bold hover:underline">ai@tpcreative.co</a>.
-                    </p>
-                </section>
-            </div>
+            <section class="space-y-3">
+                <h2 class="text-lg font-bold text-slate-900 flex items-center">
+                    <i class="fas fa-ban text-brand-teal mr-3"></i>
+                    Prohibited Activities
+                </h2>
+                <ul class="list-disc pl-6">
+                    <li>Violating applicable laws or regulations.</li>
+                    <li>Attempting unauthorized access to systems or data.</li>
+                    <li>Distributing malware, spam, or harmful content.</li>
+                    <li>Interfering with application functionality or security.</li>
+                    <li>Using the service for fraudulent or illegal purposes.</li>
+                </ul>
+            </section>
+
+            <section class="space-y-3">
+                <h2 class="text-lg font-bold text-slate-900 flex items-center">
+                    <i class="fas fa-triangle-exclamation text-brand-teal mr-3"></i>
+                    Disclaimer of Warranties
+                </h2>
+                <p>
+                    The application is provided on an "AS IS" and "AS AVAILABLE" basis.
+                </p>
+                <p>
+                    TPSmart makes no warranties, express or implied, regarding availability,
+                    accuracy, reliability, or fitness for a particular purpose.
+                </p>
+            </section>
+
+            <section class="space-y-3">
+                <h2 class="text-lg font-bold text-slate-900 flex items-center">
+                    <i class="fas fa-scale-balanced text-brand-teal mr-3"></i>
+                    Limitation of Liability
+                </h2>
+                <p>
+                    To the maximum extent permitted by law, TPSmart shall not be liable
+                    for indirect, incidental, special, consequential, or punitive damages
+                    arising from the use or inability to use the application.
+                </p>
+            </section>
+
+            <section class="space-y-3">
+                <h2 class="text-lg font-bold text-slate-900 flex items-center">
+                    <i class="fas fa-user-slash text-brand-teal mr-3"></i>
+                    Account Termination
+                </h2>
+                <p>
+                    We reserve the right to suspend or terminate access to the application
+                    if these Terms are violated or if misuse of the service is detected.
+                </p>
+            </section>
+
+            <section class="space-y-3">
+                <h2 class="text-lg font-bold text-slate-900 flex items-center">
+                    <i class="fas fa-pen-to-square text-brand-teal mr-3"></i>
+                    Changes to Terms
+                </h2>
+                <p>
+                    We may modify these Terms from time to time.
+                    Updated versions become effective upon publication.
+                </p>
+            </section>
+
+            <section class="space-y-3">
+                <h2 class="text-lg font-bold text-slate-900 flex items-center">
+                    <i class="fas fa-envelope text-brand-teal mr-3"></i>
+                    Contact Information
+                </h2>
+                <p>
+                    TPSmart<br>
+                    Website: https://tpsmart.co<br>
+                    Email: ai@tpcreative.co
+                </p>
+            </section>
+
         </div>
-    </main>
+    </div>
+</main>
 
-    <footer class="bg-slate-900 text-slate-400 py-8 text-xs border-t border-slate-800 mt-auto">
-        <div class="max-w-4xl mx-auto px-6 flex flex-col sm:flex-row justify-between items-center gap-4 text-center sm:text-left">
-            <p>&copy; 2026 TPSmart. All Rights Reserved.</p>
-            <div class="flex space-x-4">
-                <a href="index.html" class="hover:text-white transition">Home</a>
-                <a href="privacy.html" class="hover:text-white transition">Privacy Policy</a>
-            </div>
+<footer class="bg-slate-900 text-slate-400 py-8 text-xs border-t border-slate-800 mt-auto">
+    <div class="max-w-4xl mx-auto px-6 flex flex-col sm:flex-row justify-between items-center gap-4 text-center sm:text-left">
+        <p>&copy; 2026 TPSmart. All Rights Reserved.</p>
+        <div class="flex space-x-4">
+            <a href="index.html" class="hover:text-white transition">Home</a>
+            <a href="privacy.html" class="hover:text-white transition">Privacy Policy</a>
         </div>
-    </footer>
+    </div>
+</footer>
 
 </body>
 </html>
