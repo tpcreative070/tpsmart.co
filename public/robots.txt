@@ -1,0 +1,12 @@
+# robots.txt for tpsmart.co
+# https://www.robotstxt.org/robotstxt.html
+
+User-agent: *
+Allow: /
+
+# Block access to any future admin or private paths
+Disallow: /admin/
+Disallow: /private/
+
+# Sitemap location
+Sitemap: https://tpsmart.co/sitemap.xml
